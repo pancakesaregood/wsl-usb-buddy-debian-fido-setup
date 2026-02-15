@@ -4,7 +4,7 @@ This folder contains the Debian/WSL-side script to require a YubiKey touch for `
 
 ## File
 
-- `dep.py`: sets up PAM U2F for `sudo` on Debian WSL.
+- `setup_yubikey_sudo_wsl.py`: sets up PAM U2F for `sudo` on Debian WSL.
 
 ## What This Configures
 
@@ -41,19 +41,19 @@ In Debian WSL:
 
 ```bash
 cd ~/debian_yubico_fido_setup
-sudo python3 dep.py
+sudo python3 setup_yubikey_sudo_wsl.py
 ```
 
 Re-enroll key:
 
 ```bash
-sudo python3 dep.py --re-enroll
+sudo python3 setup_yubikey_sudo_wsl.py --re-enroll
 ```
 
 Dry run:
 
 ```bash
-sudo python3 dep.py --dry-run
+sudo python3 setup_yubikey_sudo_wsl.py --dry-run
 ```
 
 ## Test
