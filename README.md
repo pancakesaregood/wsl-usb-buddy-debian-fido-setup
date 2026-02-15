@@ -84,5 +84,5 @@ cp /etc/pam.d/sudo.bak /etc/pam.d/sudo
 ## Troubleshooting
 
 - No `/dev/hidraw*`: re-attach with `usbipd`, then retry.
-- `Permission denied` writing `~/.config/Yubico/u2f_keys.tmp`: ensure you are using the latest `dep.py` (it fixes ownership before enrollment).
+- `Permission denied` writing `~/.config/Yubico/u2f_keys.tmp`: ensure you are using the latest `setup_yubikey_sudo_wsl.py` (it fixes ownership before enrollment).
 - If key is attached to the wrong distro, detach and re-attach explicitly to Debian.
